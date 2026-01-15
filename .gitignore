@@ -28,51 +28,11 @@ CLAUDE.md
 .agent_session.json
 .reprompter_guidance.txt
 
-# Planning and documentation (internal)
-plan/
-
-# Test and QA reports
-*_REPORT.md
-*_TEST*.md
-QA_*.md
-QA_*.txt
-TESTING*.md
-TESTING*.txt
-VALIDATION*.md
-VALIDATION*.txt
-*_SUMMARY.md
-*_SUMMARY.txt
-*_INDEX.md
-*_EVIDENCE.md
-*_CHECKLIST.md
-*_DELIVERABLES.md
-*_FINDINGS.md
-*_APPROVAL*.md
-*_COMPLETE.md
-*_RESEARCH.md
-*_ACTION_PLAN.md
-*_SETUP.md
-CODE_REFERENCES.md
-ISSUES_AND_FIXES.md
-DEPLOYMENT.md
-EXECUTIVE_SUMMARY.md
-README_TESTING.md
-
-# Development scripts
-create-ui-components.sh
-fix-dates.sh
-fix-warnings.sh
-
-# Test data
-test_data.csv
-test-multichannel.csv
-event_unix.json
-
 # Supabase local
 .supabase/
 
 # Backup files
 *.bak
 
-# Demo guides
-DEMO_ACCOUNT_GUIDE.md
+# Temporary files
+event_unix.json
