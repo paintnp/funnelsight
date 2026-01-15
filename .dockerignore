@@ -1,0 +1,83 @@
+# Dependencies
+node_modules
+*/node_modules
+
+# Environment files
+.env
+.env.local
+.env.production
+.env.*
+!.env.example
+
+# Build outputs (will be rebuilt in Docker)
+dist
+*/dist
+build
+*/build
+.vite
+*/vite
+
+# Version control
+.git
+.gitignore
+.gitattributes
+
+# Development files
+.vscode
+.idea
+*.log
+*.swp
+.DS_Store
+.cache
+
+# Test files
+coverage
+*.test.ts
+*.test.tsx
+*.spec.ts
+*.spec.tsx
+__tests__
+__mocks__
+
+# Documentation
+*.md
+!README.md
+docs
+
+# Development tools
+.eslintrc*
+.prettierrc*
+.editorconfig
+
+# CI/CD
+.github
+.gitlab-ci.yml
+.travis.yml
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Temporary files
+tmp
+temp
+*.tmp
+
+# IDE
+.project
+.classpath
+.settings
+*.sublime-*
+
+# OS files
+Thumbs.db
+Desktop.ini
+
+# Fly.io (don't include in image, will be created on platform)
+fly.toml
+
+# Research and planning documents
+*_RESEARCH.md
+*_PLAN.md
+DEPLOYMENT.md

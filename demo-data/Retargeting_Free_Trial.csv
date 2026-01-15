@@ -1,0 +1,4 @@
+campaign_name,utm_source,utm_medium,utm_campaign,impressions,clicks,cost,registrations,attendees,date
+"Retargeting - Free Trial Offer","google","display","retarget-trial-gdn",85000,850,1275,213,170,"2025-02-01"
+"Retargeting - Free Trial Offer","facebook","paid-social","retarget-trial-fb",95000,1425,950,285,228,"2025-02-01"
+"Retargeting - Free Trial Offer","email","email","retarget-trial-nurture",18000,1260,0,378,302,"2025-02-01"

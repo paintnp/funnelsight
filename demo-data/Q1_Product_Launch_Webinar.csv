@@ -1,0 +1,5 @@
+campaign_name,utm_source,utm_medium,utm_campaign,impressions,clicks,cost,registrations,attendees,date
+"Q1 Product Launch Webinar","google","cpc","product-launch-search",45000,1350,2700,405,283,"2025-01-15"
+"Q1 Product Launch Webinar","facebook","paid-social","product-launch-social",120000,2400,1800,528,369,"2025-01-15"
+"Q1 Product Launch Webinar","email","email","product-launch-newsletter",25000,1875,0,656,459,"2025-01-15"
+"Q1 Product Launch Webinar","linkedin","paid-social","product-launch-linkedin",18000,720,1440,302,211,"2025-01-15"

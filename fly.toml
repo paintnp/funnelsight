@@ -1,0 +1,47 @@
+# fly.toml app configuration file generated for funnelsight
+# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
+
+app = "funnelsight"
+primary_region = "iad"  # US East (Virginia) - closest to Supabase
+kill_signal = "SIGINT"
+kill_timeout = "5s"
+
+[build]
+  dockerfile = "Dockerfile"
+
+[env]
+  NODE_ENV = "production"
+  PORT = "8080"
+  AUTH_MODE = "supabase"
+  STORAGE_MODE = "supabase"
+
+# Main HTTP service configuration
+[http_service]
+  internal_port = 8080
+  force_https = true
+  auto_stop_machines = "stop"
+  auto_start_machines = true
+  min_machines_running = 0
+  processes = ["app"]
+
+  # HTTP health check configuration
+  [[http_service.checks]]
+    grace_period = "10s"
+    interval = "15s"
+    method = "GET"
+    path = "/api/health"
+    protocol = "http"
+    timeout = "5s"
+
+  # Concurrency limits
+  [http_service.concurrency]
+    type = "connections"
+    hard_limit = 25
+    soft_limit = 20
+
+# Machine resources - shared CPU with 512MB memory (cost-effective for MVP)
+[[vm]]
+  size = "shared-cpu-1x"
+  memory = "512mb"
+  cpu_kind = "shared"
+  cpus = 1
